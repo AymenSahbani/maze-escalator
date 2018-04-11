@@ -146,7 +146,6 @@ public class UserOfMaze {
         }
     }
 
-
     /**
       Demo the restore-from-snapshot paradigm.
       Run using a shell command like...
@@ -159,6 +158,8 @@ public class UserOfMaze {
         throw new java.lang.RuntimeException(
             "Write code to take a snapshot of @candidate. "
           + "Then, in @candidate, have the explorer go() out of the maze.");
+
+        snapshot = new Maze(candidate);
 
         // System.out.println(
                             // "modified candidate with no explorer"
