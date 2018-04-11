@@ -20,14 +20,13 @@ When asked how to find the path to the end of the maze from a square in the maze
 ## English or pseudocode description of algorithm
 
 ```
-if the current square is the end sqare
+if the explorer is on the treasure
     return true and the current path
-if the current square is a wall
+if the explorer is on a wall
     return false
 else
     for each adjacent square
-        if the adjacent square is not a part of the current path and it is not a wall
-            return the maze solver starting from adjacent square
+        invoke the recursive abstraction from the adjacent square
     return false
 ```
 
