@@ -89,12 +89,13 @@ public class Maze {
 
         // Copy the explorer's position (code by Holmes is asserted to work)
         explorerPosition = new Vector( old.explorerPosition);
-        maze = new int[old.length][old[0].length];
+        maze = new int[old.rankCount][];
 
         rankCount = old.rankCount;
-        for(int i = 0; i < old.length; i++){
-          for(int j = 0; j < old[0].length; j++){
-            maze[i][j] = old.maze[i][j];
+        for(int r = 0; r < rankCount; r++){
+          maze[r] = new int[old.maze[r].length];
+          for(int f = 0; f < old.maze[r].length; f++){
+            maze[r][f] = old.maze[r][f];
           }
         }
     }
@@ -222,6 +223,10 @@ public class Maze {
                 && 0 <= file && file < maze[ rank].length
               )  return this;
             else return null;  // outside maze
+        }
+
+        public String toString(){
+          return "<" + rank + ", " + file + ">";
         }
 
 
