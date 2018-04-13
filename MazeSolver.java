@@ -1,3 +1,7 @@
+/**
+ *  A Maze Solver class that takes a Maze in solve() and finds if there is a valid solution
+ */
+
 public class MazeSolver {
     private static final int[] directions = {Maze.EAST, Maze.NORTH, Maze.WEST, Maze.SOUTH};
 

@@ -30,18 +30,24 @@ else
     return false
 ```
 
-## class(es), with fields and methods
+## Class(es), with fields and methods
 
 Maze:
-    1. Creates a board of size n
-    2. Moves the explorer n places
-    3. Method to check if the explorer hits a wall or any other object
-    4. Treasure field
+* A constructor to initialize a maze given a file path
+* A constructor to initialize a maze given another maze
+* A method to move the explorer in a certain direction
+* A method to check if the explorer's current position is legal
+* A field holding the location of the explorer
+* toString method to help debug and visualize progress
  Maze Solver:
-    1. Method to solve the maze
-    2. Direction field
+* A method to solve a maze
+
 ## version0 wishlist
 
 * Working maze
 * Maze solver
+
+## Known bugs
+
+* Walls sometimes disappear after being explored
 

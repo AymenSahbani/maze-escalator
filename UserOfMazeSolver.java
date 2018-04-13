@@ -1,3 +1,7 @@
+/**
+ *  A class that provides test cases for the MazeSolver class
+ */
+
 import java.io.FileNotFoundException;
 
 public class UserOfMazeSolver {
