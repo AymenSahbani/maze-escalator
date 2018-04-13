@@ -32,6 +32,14 @@ else
 
 ## class(es), with fields and methods
 
+Maze:
+    1. Creates a board of size n
+    2. Moves the explorer n places
+    3. Method to check if the explorer hits a wall or any other object
+    4. Treasure field
+ Maze Solver:
+    1. Method to solve the maze
+    2. Direction field
 ## version0 wishlist
 
 * Working maze
