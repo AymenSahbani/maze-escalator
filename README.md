@@ -39,7 +39,8 @@ Maze:
 * A method to check if the explorer's current position is legal
 * A field holding the location of the explorer
 * toString method to help debug and visualize progress
- Maze Solver:
+ 
+Maze Solver:
 * A method to solve a maze
 
 ## version0 wishlist
