@@ -16,5 +16,8 @@ public class UserOfMazeSolver {
 
         Maze m3 = new Maze("./mazes/intersection_treasureNorth.txt", 2, 0); // Start in wall
         System.out.println(ms.solve(m3) + " ... expecting false ");
+
+        Maze m4 = new Maze("./mazes/straight_maze.txt", 0, 0); // Start in wall
+        System.out.println(ms.solve(m4) + " ... expecting true ");
     }
 }

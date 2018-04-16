@@ -48,7 +48,12 @@ Maze Solver:
 * Working maze
 * Maze solver
 
+## v1
+
+* Maze prints path after being solved (if it can be solved)
+* Fixed bug where temporary walls weren't always removed
+
 ## Known bugs
 
-* Walls sometimes disappear after being explored
+* Only the first solution is shown
 

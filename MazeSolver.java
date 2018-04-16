@@ -6,17 +6,20 @@ public class MazeSolver {
     private static final int[] directions = {Maze.EAST, Maze.NORTH, Maze.WEST, Maze.SOUTH};
 
     public boolean solve(Maze maze){
-        if(maze.explorerIsOnA() == Maze.WALL)
+        if(maze.explorerIsOnA() == Maze.WALL || maze.explorerIsOnA() == Maze.PATH)
             return false;
-        if(maze.explorerIsOnA() == Maze.TREASURE)
+        if(maze.explorerIsOnA() == Maze.TREASURE){
+            System.out.println(maze);
             return true;
-        maze.dropA(Maze.WALL);   // Prevent the explorer from going back
+        }
+        maze.dropA(Maze.PATH);   // Prevent the explorer from going back
 
         for(int direction: directions){
             Maze snapshot = new Maze(maze);
-            System.out.println(snapshot); // See whats going on
             snapshot.go(direction);
-            if(solve(snapshot))  return true;
+            if(solve(snapshot)){
+                return true;
+            }
         }
         return false;
     }
